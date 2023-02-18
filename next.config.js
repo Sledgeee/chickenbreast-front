@@ -4,8 +4,7 @@ const nextConfig = {
 	swcMinify: true,
 	poweredByHeader: false,
 	env: {
-		AUTH_MICRO_URL: process.env.AUTH_MICRO_URL,
-		SHOP_MICRO_URL: process.env.SHOP_MICRO_URL,
+		API_URL: process.env.API_URL,
 		APP_NAME: process.env.APP_NAME
 	},
 	images: {
