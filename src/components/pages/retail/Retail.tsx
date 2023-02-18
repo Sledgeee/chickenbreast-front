@@ -7,6 +7,7 @@ import { IRetail } from '@/components/pages/retail/retail.interface'
 import { IProduct } from '@/types/product.interface'
 
 import styles from './Retail.module.scss'
+import { API_URL } from '@/api/ky'
 
 const Retail: FC<IRetail> = ({ data }) => {
 	const [isOpen, setIsOpen] = useState(true)
@@ -53,7 +54,7 @@ const ProductCard: FC<{ prod: IProduct }> = ({ prod }) => {
 				<Image
 					width={300}
 					height={300}
-					src={'http://localhost:8000' + prod.image}
+					src={API_URL + prod.image}
 					alt={'img'}
 				/>
 				<div>{prod.name}</div>
