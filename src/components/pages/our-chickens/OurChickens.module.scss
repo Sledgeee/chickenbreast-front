@@ -1,0 +1,23 @@
+.head {
+  @apply w-full h-full relative pb-10;
+
+  video {
+    @apply h-auto object-cover m-auto block;
+  }
+
+  div {
+    @apply absolute top-0 left-0 flex flex-col justify-center items-center w-full h-full pb-32;
+
+    h3 {
+      font-family: 'Patrick Hand SC', cursive;
+      @apply text-4xl text-white;
+    }
+
+    h2 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 600;
+      @apply text-5xl text-primary;
+    }
+  }
+}
+

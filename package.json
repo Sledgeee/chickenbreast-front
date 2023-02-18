@@ -1,0 +1,50 @@
+{
+  "name": "chickenbreast",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.10",
+    "@next/font": "13.1.6",
+    "@reduxjs/toolkit": "^1.9.2",
+    "@types/node": "18.13.0",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.10",
+    "async-mutex": "^0.4.0",
+    "classnames": "^2.3.2",
+    "cookies-next": "^2.1.1",
+    "dayjs": "^1.11.7",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.1.6",
+    "ky": "^0.33.2",
+    "lodash": "^4.17.21",
+    "next": "13.1.6",
+    "nextjs-progressbar": "^0.0.16",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.43.1",
+    "react-icons": "^4.7.1",
+    "react-loading-skeleton": "^3.1.1",
+    "react-query": "^3.39.3",
+    "react-redux": "^8.0.5",
+    "react-redux-toastr": "^7.6.10",
+    "redux": "^4.2.1",
+    "redux-persist": "^6.0.0",
+    "sass": "^1.58.0",
+    "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.0.0",
+    "@types/react-redux-toastr": "^7.6.2",
+    "@types/redux-persist": "^4.3.1",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.4",
+    "tailwindcss": "^3.2.6"
+  }
+}

@@ -1,0 +1,52 @@
+.footer {
+  @apply w-full;
+}
+
+.logo {
+  @apply max-w-full mt-4;
+}
+
+.wrapper {
+  @apply flex flex-col items-center justify-center;
+}
+
+.icons {
+  @apply flex;
+
+  a {
+    @apply transition-all ease-in-out mx-0.5;
+
+    &:hover {
+      @apply text-primary;
+    }
+
+    svg {
+      @apply w-[30px] h-[30px];
+    }
+  }
+}
+
+.main-menu {
+  @apply overflow-hidden;
+}
+
+.menu {
+  @apply flex list-none m-0 p-0;
+
+  li {
+    @apply float-left m-2 p-2 relative cursor-pointer text-base text-primary transition-all ease-in-out;
+
+    &:hover {
+      @apply text-gray-900;
+    }
+  }
+}
+
+.copyright {
+  font-family: 'Roboto', sans-serif;
+  @apply text-[14px] text-center mt-5 py-2 w-full bg-primary text-gray-200;
+}
+
+.active {
+  @apply text-gray-900;
+}

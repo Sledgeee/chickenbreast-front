@@ -1,0 +1,133 @@
+.wrapper {
+  @apply bg-cover py-[100px];
+
+  &.intro-block {
+    background-image: url("/images/background/1.png");
+  }
+
+  &.products-block {
+    background-image: url("/images/background/2.png");
+  }
+
+  &.wtb-block {
+    background-image: url("/images/background/3.png");
+  }
+
+  &.recipes-block {
+    background-image: url("/images/background/4.png");
+  }
+}
+
+.container {
+  @apply max-w-[1450px] m-auto;
+}
+
+.intro {
+  @apply pt-[5%] w-[45%];
+}
+
+.intro-text-block {
+  font-family: 'Roboto', sans-serif;
+  @apply mb-7;
+
+  h1 {
+    font-weight: 700;
+    @apply text-6xl text-primary;
+  }
+
+  h4 {
+    font-weight: 500;
+    @apply text-3xl;
+  }
+
+  p {
+    @apply text-[18px] text-gray-800 mt-8;
+  }
+}
+
+.intro-button {
+  @apply bg-primary w-fit p-3 text-gray-200 rounded text-base transition-all ease-in-out;
+
+  &:hover {
+    @apply bg-blue-800;
+  }
+}
+
+.products, .wtb {
+  @apply text-center;
+}
+
+.products-text-block {
+  font-family: 'Patrick Hand SC', cursive;
+  @apply my-7 flex flex-col items-center;
+
+  h2 {
+    font-weight: 600;
+    @apply text-4xl my-2;
+  }
+
+  h3 {
+    font-weight: 500;
+    @apply text-3xl my-2 text-primary;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    @apply text-[18px] max-w-3xl text-gray-800 my-2;
+  }
+}
+
+.products-previews {
+  @apply flex justify-center items-center gap-20 mb-16;
+}
+
+.products-go-to-shop {
+  @apply flex justify-center mb-14;
+
+  img {
+    @apply absolute py-2;
+  }
+}
+
+.wtb-text-block {
+  @apply my-7 flex flex-col items-center;
+
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    @apply text-4xl my-2;
+  }
+
+  h3 {
+    font-family: 'Patrick Hand SC', cursive;
+    @apply text-3xl text-primary;
+  }
+}
+
+.recipes {
+  @apply flex justify-between;
+}
+
+.recipes-placeholder {
+  @apply w-full;
+}
+
+.recipes-text-block {
+  @apply flex flex-col justify-start text-start max-w-2xl;
+
+  h2 {
+    font-family: 'Patrick Hand SC', cursive;
+    font-weight: 600;
+    @apply text-4xl my-2;
+  }
+
+  h3 {
+    font-family: 'Patrick Hand SC', cursive;
+    @apply text-3xl text-primary;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    @apply text-[18px] text-gray-800 mt-4 mb-12;
+  }
+}
