@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { FC } from 'react'
 
 import Layout from '@/components/layout/Layout'
@@ -131,26 +130,6 @@ const OurStory: FC = () => {
 						</div>
 						<div className={styles.side}></div>
 					</div>
-				</div>
-			</div>
-			<div className={styles.chickens}>
-				<div className={styles.chickensPlaceholder}></div>
-				<div className={styles.chickensTextBlock}>
-					<h3>
-						<span>Наші кури</span>
-					</h3>
-					<h2>
-						<span>Управління, чесність і досконалість</span>
-					</h2>
-					<p>
-						<span>
-							Дізнайтеся про наші високі стандарти догляду за тваринами та
-							якісні продукти.
-						</span>
-					</p>
-					<Link href={'/our-chickens'} className={styles.introButton}>
-						<span>Дізнатись більше</span>
-					</Link>
 				</div>
 			</div>
 		</Layout>

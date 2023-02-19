@@ -26,19 +26,17 @@ const Retail: FC<IRetail> = ({ data }) => {
 				{data?.map((data, index) => {
 					if (data.products.length > 0) {
 						return (
-							<>
-								<div className={styles.category} key={'c' + index}>
-									<div className={styles.title}>
-										<h1>{data.category}</h1>
-										<div></div>
-									</div>
-									<div className={styles.cards}>
-										{data.products?.map((prod, index) => (
-											<ProductCard key={index} prod={prod} />
-										))}
-									</div>
+							<div className={styles.category} key={'c' + index}>
+								<div className={styles.title}>
+									<h1>{data.category}</h1>
+									<div></div>
 								</div>
-							</>
+								<div className={styles.cards}>
+									{data.products?.map((prod, index) => (
+										<ProductCard key={index} prod={prod} />
+									))}
+								</div>
+							</div>
 						)
 					}
 				})}
@@ -49,17 +47,11 @@ const Retail: FC<IRetail> = ({ data }) => {
 
 const ProductCard: FC<{ prod: IProduct }> = ({ prod }) => {
 	return (
-		<>
-			<div className={styles.card} onClick={() => {}}>
-				<Image
-					width={300}
-					height={300}
-					src={API_URL + prod.image}
-					alt={'img'}
-				/>
-				<div>{prod.name}</div>
-			</div>
-		</>
+		<div id={prod._id} className={styles.card} onClick={() => {}}>
+			<Image width={300} height={300} src={API_URL + prod.image} alt={'img'} />
+			<div>{prod.name}</div>
+			<div>{prod.price} ₴</div>
+		</div>
 	)
 }
 

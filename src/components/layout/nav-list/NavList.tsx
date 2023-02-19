@@ -19,10 +19,6 @@ const NavList: FC<INav> = ({ cn, active }) => {
 			label: 'Наша історія'
 		},
 		{
-			path: '/our-chickens',
-			label: 'Наші кури'
-		},
-		{
 			path: '/recipes',
 			label: 'Рецепти'
 		},

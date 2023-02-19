@@ -20,7 +20,7 @@
 }
 
 .category {
-  @apply mb-10;
+  @apply mb-12;
 }
 
 .title {
@@ -38,10 +38,10 @@
 }
 
 .cards {
-  @apply flex flex-wrap max-w-[1450px];
+  @apply grid grid-cols-4 w-[1450px];
 }
 
 .card {
   font-family: 'Roboto', sans-serif;
-  @apply flex flex-col justify-center items-center w-1/4 my-3 cursor-pointer;
+  @apply flex flex-col justify-center items-center w-auto m-4 cursor-pointer;
 }
