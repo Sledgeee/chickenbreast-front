@@ -15,7 +15,6 @@ import styles from './Retail.module.scss'
 import { API_URL } from '@/api/ky'
 
 const Retail: FC<IRetail> = ({ data }) => {
-	const [isOpen, setIsOpen] = useState(true)
 	const cart = useCart()
 
 	return (

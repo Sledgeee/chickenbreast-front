@@ -57,9 +57,7 @@ const Cart: FC = () => {
 						</table>
 						<div>
 							<h1>Підсумок:</h1>
-							<span>Товар: {cart.moneyAmount}₴</span>
-							<span>Доставка: 65₴</span>
-							<span>Загалом: {cart.moneyAmount + 65}₴</span>
+							<span>{cart.moneyAmount}₴</span>
 							<button onClick={async () => await router.push('/cart/checkout')}>
 								Оформити замовлення
 							</button>
