@@ -23,7 +23,7 @@
 }
 
 .menu {
-  @apply flex list-none m-0 p-0;
+  @apply flex flex-row justify-center items-center list-none m-0 p-0;
 
   li {
     @apply float-left m-2 p-2 relative cursor-pointer text-base text-gray-900 transition-all ease-in-out;

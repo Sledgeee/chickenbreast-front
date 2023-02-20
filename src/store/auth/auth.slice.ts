@@ -4,7 +4,7 @@ import { login, logout, register } from '@/store/auth/auth.actions'
 import { IAuthInitialState } from '@/store/auth/auth.interface'
 
 const initialState: IAuthInitialState = {
-	user: undefined,
+	user: null,
 	accessToken: '',
 	isLoading: false
 }

@@ -16,7 +16,6 @@
 
 .shop-area {
   @apply flex flex-col justify-center items-center bg-cover py-12;
-  background-image: url("/images/background/8.png");
 }
 
 .category {
@@ -43,5 +42,30 @@
 
 .card {
   font-family: 'Roboto', sans-serif;
-  @apply flex flex-col justify-center items-center w-auto m-4 cursor-pointer;
+  @apply flex flex-col justify-center items-center w-auto m-4 bg-gray-100 rounded rounded-2xl py-2;
+
+  a {
+    div {
+      @apply w-full my-2;
+    }
+  }
+}
+
+.card-bottom {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  @apply flex flex-col w-full my-2 px-6;
+
+  div {
+    @apply flex justify-between w-full my-2;
+
+    button {
+      @apply flex justify-center items-center transition-all ease-in-out p-2 rounded rounded-3xl;
+
+      &:hover {
+        @apply bg-gray-200;
+      }
+    }
+  }
 }

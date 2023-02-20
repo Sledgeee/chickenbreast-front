@@ -1,7 +1,6 @@
-import { IBase } from '@/types/base.interface'
 import { IProduct } from '@/types/product.interface'
 
-export interface ICart extends IBase {
+export interface ICart {
 	productsQuantity: number
 	moneyAmount: number
 	products: IProduct[]

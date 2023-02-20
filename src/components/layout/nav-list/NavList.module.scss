@@ -1,0 +1,7 @@
+.icon {
+  @apply flex flex-row justify-center items-center;
+
+  * {
+    @apply mx-1;
+  }
+}

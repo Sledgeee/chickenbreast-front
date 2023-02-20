@@ -36,14 +36,14 @@ const Contacts: FC = () => {
 				event.target.email.value = ''
 				event.target.subject.value = ''
 				event.target.message.value = ''
-				toastr.success('Успіх', 'Повідомлення успішно відправлено')
+				toastr.success("Зворотній зв'язок", 'Повідомлення успішно відправлено')
 			} else {
 				const error = (await res.json()) as IErrorResponse
 				toastr.error(error.message, '')
 			}
 		} catch {
 			toastr.error(
-				'Помилка',
+				"Зворотній зв'язок",
 				'Під час відправки повідомлення сталась непередбачена помилка'
 			)
 		}

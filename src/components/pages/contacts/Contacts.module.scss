@@ -17,7 +17,6 @@
 .items {
   @apply flex justify-center items-center gap-32 py-12;
   font-family: 'Roboto', sans-serif;
-  background-image: url("/images/background/8.png");
 
   div {
     @apply flex flex-col justify-center items-center max-w-sm text-center;
@@ -59,7 +58,11 @@
     }
 
     button {
-      @apply bg-primary w-fit py-3 px-10 text-gray-200 rounded;
+      @apply bg-primary w-fit py-3 px-10 text-gray-200 rounded mb-10 mt-2 transition-all ease-in-out;
+
+      &:hover {
+        @apply bg-blue-800;
+      }
     }
 
     .text-area-indicator {

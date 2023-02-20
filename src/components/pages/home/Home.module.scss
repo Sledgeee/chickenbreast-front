@@ -12,10 +12,6 @@
   &.wtb-block {
     background-image: url("/images/background/3.png");
   }
-
-  &.recipes-block {
-    background-image: url("/images/background/4.png");
-  }
 }
 
 .container {
@@ -101,33 +97,5 @@
   h3 {
     font-family: 'Patrick Hand SC', cursive;
     @apply text-3xl text-primary;
-  }
-}
-
-.recipes {
-  @apply flex justify-between;
-}
-
-.recipes-placeholder {
-  @apply w-full;
-}
-
-.recipes-text-block {
-  @apply flex flex-col justify-start text-start max-w-2xl;
-
-  h2 {
-    font-family: 'Patrick Hand SC', cursive;
-    font-weight: 600;
-    @apply text-4xl my-2;
-  }
-
-  h3 {
-    font-family: 'Patrick Hand SC', cursive;
-    @apply text-3xl text-primary;
-  }
-
-  p {
-    font-family: 'Roboto', sans-serif;
-    @apply text-[18px] text-gray-800 mt-4 mb-12;
   }
 }

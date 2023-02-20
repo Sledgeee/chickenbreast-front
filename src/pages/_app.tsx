@@ -27,11 +27,10 @@ export default function App({ Component, pageProps }: TypeAppProps) {
 					<AuthProvider Component={Component}>
 						<Component {...pageProps} />
 						<ReduxToastrLib
+							timeOut={3000}
 							newestOnTop={false}
-							preventDuplicates
 							progressBar
 							closeOnToastrClick
-							timeOut={3000}
 							transitionIn='fadeIn'
 							transitionOut='fadeOut'
 						/>

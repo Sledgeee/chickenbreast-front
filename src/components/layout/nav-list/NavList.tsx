@@ -1,13 +1,17 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { FC } from 'react'
+import { FaOpencart } from 'react-icons/fa'
 
-interface INav {
+import { useCart } from '@/hooks/useCart'
+
+import styles from './NavList.module.scss'
+
+const NavList: FC<{
 	cn: string
 	active: string
-}
-
-const NavList: FC<INav> = ({ cn, active }) => {
+}> = ({ cn, active }) => {
+	const cart = useCart()
 	const router = useRouter()
 	const routes = [
 		{
@@ -17,10 +21,6 @@ const NavList: FC<INav> = ({ cn, active }) => {
 		{
 			path: '/our-story',
 			label: 'Наша історія'
-		},
-		{
-			path: '/recipes',
-			label: 'Рецепти'
 		},
 		{
 			path: '/contacts',
@@ -40,6 +40,17 @@ const NavList: FC<INav> = ({ cn, active }) => {
 					</Link>
 				</li>
 			))}
+			<li>
+				<Link
+					href={'/cart'}
+					className={`${styles.icon} ${
+						router.pathname === '/cart' ? active : ''
+					}`}
+				>
+					<FaOpencart />
+					<span>{cart.productsQuantity}</span>
+				</Link>
+			</li>
 		</ul>
 	)
 }

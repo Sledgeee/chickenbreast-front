@@ -99,33 +99,6 @@ const Home: FC = () => {
 					</div>
 				</div>
 			</div>
-			<div className={`${styles.wrapper} ${styles.recipesBlock}`}>
-				<div className={styles.container}>
-					<div className={styles.recipes}>
-						<div className={styles.recipesPlaceholder}></div>
-						<div className={styles.recipesTextBlock}>
-							<h3>
-								<span>Перенесіть ресторан додому</span>
-							</h3>
-							<h2>
-								<span>Тако з куркою на грилі</span>
-							</h2>
-							<p>
-								<span>
-									Ми знаємо, що ви бажаєте лише найкращого для своєї родини,
-									коли справа доходить до домашньої їжі! Наша курка ніжна та
-									делікатна, залишаючись соковитою та насиченою смаком –
-									ідеально підходить для таких рецептів, як ця смачна страва з
-									курки-гриль тако!
-								</span>
-							</p>
-							<Link href={'/recipes'} className={styles.introButton}>
-								<span>Отримати рецепт</span>
-							</Link>
-						</div>
-					</div>
-				</div>
-			</div>
 			<div className={`${styles.wrapper} ${styles.wtbBlock}`}>
 				<div className={styles.container}>
 					<div className={styles.wtb}>
