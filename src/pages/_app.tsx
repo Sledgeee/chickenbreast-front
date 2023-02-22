@@ -4,16 +4,11 @@ import { Provider } from 'react-redux'
 import ReduxToastrLib from 'react-redux-toastr'
 import { PersistGate } from 'redux-persist/integration/react'
 
-import AuthProvider from '@/providers/AuthProvider'
-import { TypeComponentAuthFields } from '@/providers/private-route.interface'
-
 import '@/assets/styles/globals.scss'
 
 import { persistor, store } from '@/store/store'
 
-type TypeAppProps = AppProps & TypeComponentAuthFields
-
-export default function App({ Component, pageProps }: TypeAppProps) {
+export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<NextProgressBar
@@ -24,18 +19,16 @@ export default function App({ Component, pageProps }: TypeAppProps) {
 			/>
 			<Provider store={store}>
 				<PersistGate persistor={persistor} loading={null}>
-					<AuthProvider Component={Component}>
-						<Component {...pageProps} />
-						<ReduxToastrLib
-							timeOut={4000}
-							newestOnTop={false}
-							preventDuplicates
-							progressBar
-							closeOnToastrClick
-							transitionIn='fadeIn'
-							transitionOut='fadeOut'
-						/>
-					</AuthProvider>
+					<Component {...pageProps} />
+					<ReduxToastrLib
+						timeOut={4000}
+						newestOnTop={false}
+						preventDuplicates
+						progressBar
+						closeOnToastrClick
+						transitionIn='fadeIn'
+						transitionOut='fadeOut'
+					/>
 				</PersistGate>
 			</Provider>
 		</>
