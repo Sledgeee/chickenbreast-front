@@ -1,7 +1,7 @@
-import { IProduct } from '@/types/product.interface'
+import { ICartProduct } from '@/types/product.interface'
 
 export interface ICart {
 	productsQuantity: number
 	moneyAmount: number
-	products: IProduct[]
+	products: ICartProduct[]
 }

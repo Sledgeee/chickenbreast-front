@@ -22,3 +22,8 @@ export interface IProduct extends IBase {
 	image: string
 	category: ICategory
 }
+
+export interface ICartProduct extends IProduct {
+	quantity: number
+	totalSum: number
+}

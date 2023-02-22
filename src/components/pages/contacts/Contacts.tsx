@@ -5,6 +5,7 @@ import { GrMap } from 'react-icons/gr'
 import { toastr } from 'react-redux-toastr'
 
 import Layout from '@/components/layout/Layout'
+import LoadingIndicator from '@/components/ui/loading-indicator/LoadingIndicator'
 
 import { IErrorResponse } from '@/types/error-response.interface'
 
@@ -134,10 +135,7 @@ const Contacts: FC = () => {
 						<button type='submit'>Відправити</button>
 					</form>
 				) : (
-					<div className={styles.ldsRipple}>
-						<div></div>
-						<div></div>
-					</div>
+					<LoadingIndicator />
 				)}
 			</div>
 		</Layout>

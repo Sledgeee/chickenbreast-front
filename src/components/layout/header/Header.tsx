@@ -1,27 +1,26 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { FC, useEffect } from 'react'
+import { FC, useEffect, useState } from 'react'
 
 import NavList from '@/components/layout/nav-list/NavList'
 
 import styles from './Header.module.scss'
 
 const Header: FC = () => {
+	const [bg, setBg] = useState('')
+
 	useEffect(() => {
 		window.onscroll = function () {
-			const header = document.getElementById('header')
-			if (header != null) {
-				if (window.pageYOffset > 50) {
-					header.classList.add(styles.bg)
-				} else {
-					header.classList.remove(styles.bg)
-				}
+			if (window.pageYOffset > 50) {
+				setBg(styles.bg)
+			} else {
+				setBg('')
 			}
 		}
 	}, [])
 
 	return (
-		<header id={'header'} className={styles.header}>
+		<header id={'header'} className={`${styles.header} ${bg}`}>
 			<div className={styles.wrapper}>
 				<div className={styles.container}>
 					<div className={styles.logo}>
