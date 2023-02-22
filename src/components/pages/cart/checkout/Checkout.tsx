@@ -192,10 +192,11 @@ const Checkout: FC<{
 											<table>
 												<thead>
 													<tr>
-														<th style={{ width: '15%' }}></th>
-														<th style={{ width: '53%' }}>Назва</th>
+														<th style={{ width: '10%' }}></th>
+														<th style={{ width: '40%' }}>Назва</th>
+														<th style={{ width: '10%' }}>Кількість</th>
 														<th style={{ width: '20%' }}>Ціна</th>
-														<th style={{ width: '12%' }}>Кількість</th>
+														<th style={{ width: '20%' }}>Загалом</th>
 													</tr>
 												</thead>
 												<tbody>
@@ -210,9 +211,12 @@ const Checkout: FC<{
 																/>
 															</td>
 															<td>{value.name}</td>
-															<td>{value.price}₴</td>
 															<td>
 																<span>{value.quantity}</span>
+															</td>
+															<td>{value.price}₴</td>
+															<td>
+																<span>{value.totalSum}₴</span>
 															</td>
 														</tr>
 													))}

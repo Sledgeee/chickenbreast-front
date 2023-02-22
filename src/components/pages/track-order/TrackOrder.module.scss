@@ -1,0 +1,42 @@
+.wrapper {
+  @apply py-32 flex flex-col items-center w-full h-full;
+  font-family: 'Roboto', sans-serif;
+
+  .container {
+    @apply max-w-[1450px] w-full h-full;
+
+    .head {
+      h1 {
+        @apply text-2xl;
+      }
+
+      h2 {
+        @apply text-base;
+      }
+    }
+
+    .items {
+      @apply my-5;
+
+      h2 {
+        @apply text-base;
+      }
+
+      table {
+        @apply text-center w-full select-none m-2;
+
+        .product-count-block {
+          @apply border-none w-auto flex flex-row justify-center items-center;
+
+          svg {
+            @apply bg-primary text-white rounded cursor-pointer mx-2;
+          }
+        }
+      }
+
+      table, th, td {
+        @apply px-3 py-1 border border border-solid border-gray-300;
+      }
+    }
+  }
+}
