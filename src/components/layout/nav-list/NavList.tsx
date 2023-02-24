@@ -25,6 +25,10 @@ const NavList: FC<{
 		{
 			path: '/contacts',
 			label: 'Контакти'
+		},
+		{
+			path: '/track-order',
+			label: 'Відстежити замовлення'
 		}
 	]
 

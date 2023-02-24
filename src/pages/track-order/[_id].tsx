@@ -1,13 +1,13 @@
 import { GetServerSideProps, NextPage } from 'next'
 
-import TrackOrder from '@/components/pages/track-order/TrackOrder'
+import TrackedOrder from '@/components/pages/track-order/tracked-order/TrackedOrder'
 
 import { IOrder } from '@/types/order.interface'
 
 import { API_URL } from '@/api/ky'
 
-const TrackOrderPage: NextPage<{ order: IOrder }> = ({ order }) => {
-	return <TrackOrder order={order} />
+const TrackedOrderPage: NextPage<{ order: IOrder }> = ({ order }) => {
+	return <TrackedOrder order={order} />
 }
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
@@ -22,4 +22,4 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
 	}
 }
 
-export default TrackOrderPage
+export default TrackedOrderPage
