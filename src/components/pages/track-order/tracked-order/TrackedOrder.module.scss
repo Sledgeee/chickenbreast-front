@@ -5,13 +5,37 @@
   .container {
     @apply max-w-[1450px] w-full h-full;
 
-    .head {
+    .accept-person {
+      @apply flex flex-col justify-center items-center h-[42.9vh];
+    }
+
+    .head, .accept-person {
       h1 {
-        @apply text-2xl;
+        @apply text-2xl mb-2;
       }
 
       h2 {
         @apply text-base;
+      }
+
+      .area {
+        @apply mt-32;
+
+        input {
+          @apply border border-primary rounded py-3 px-2 mx-2;
+        }
+
+        .error {
+          @apply border border-red-600 placeholder-red-600;
+        }
+
+        button {
+          @apply bg-primary w-fit py-3 px-10 text-gray-200 rounded mb-10 mt-2 transition-all ease-in-out;
+
+          &:hover {
+            @apply bg-blue-800;
+          }
+        }
       }
     }
 
