@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import { FC, useState } from 'react'
 
 import Layout from '@/components/layout/Layout'
@@ -12,6 +13,11 @@ const TrackedOrder: FC<{ order: IOrder }> = ({ order }) => {
 	const [isClient, setIsClient] = useState(false)
 	const [value, setValue] = useState('')
 	const [errored, setErrored] = useState(false)
+	const { push } = useRouter()
+
+	if (!order._id) {
+		push('/404')
+	}
 
 	return (
 		<Layout title={`Замовлення ${order._id}`}>

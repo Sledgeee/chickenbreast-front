@@ -1,0 +1,35 @@
+.section {
+  @apply flex items-center h-full p-16 h-screen;
+
+  div {
+    @apply container flex flex-col items-center justify-center px-5 mx-auto my-8;
+
+    div {
+      @apply max-w-md text-center;
+
+      h2 {
+        @apply mb-8 font-extrabold text-9xl;
+
+        span {
+          @apply sr-only;
+        }
+      }
+
+      .p-1 {
+        @apply text-2xl font-semibold md:text-3xl;
+      }
+
+      .p-2 {
+        @apply mt-4 mb-8;
+      }
+
+      a {
+        @apply bg-primary w-fit py-3 px-10 text-gray-200 rounded mb-10 mt-2 transition-all ease-in-out;
+
+        &:hover {
+          @apply bg-blue-800;
+        }
+      }
+    }
+  }
+}
