@@ -5,6 +5,7 @@ export default function Document() {
 		<Html lang='en'>
 			<Head>
 				<link rel='icon' href='/favicon.ico' type='image/x-icon' />
+				<meta name='viewport' content='viewport-fit=cover' />
 			</Head>
 			<body>
 				<Main />
