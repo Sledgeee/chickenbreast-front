@@ -112,7 +112,11 @@ const TrackedOrder: FC<{ order: IOrder }> = ({ order }) => {
 								<button
 									onClick={() => {
 										setErrored(false)
-										if (value === order.email || value === order.phone) {
+										if (
+											value === order.email ||
+											value.replace('+38', '') ===
+												order.phone.replace('+38', '')
+										) {
 											setIsClient(true)
 										} else setErrored(true)
 									}}
